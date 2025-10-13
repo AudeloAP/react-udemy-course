@@ -5,10 +5,10 @@ interface ItemInCart {
 }
 
 const itemsInCart: ItemInCart[] = [
-  { productName: "Shure 215", quantity: 3},
-  { productName: "IFI studio", quantity: 2},
-  { productName: "plug converter", quantity: 2},
-  { productName: "inear pads", quantity: 1},
+  { productName: "Shure 215", quantity: 3 },
+  { productName: "IFI studio", quantity: 2 },
+  { productName: "plug converter", quantity: 2 },
+  { productName: "inear pads", quantity: 1 },
 ]
 
 export function FirstSteps() {
@@ -16,12 +16,11 @@ export function FirstSteps() {
     <>
       <h1>Shoping Cart</h1>
 
-      {itemsInCart.map((item) => 
-          (<ItemCounter key={item.productName} itemName={item.productName} 
-            quantity={item.quantity}/>
-          )
-        )
-      }
+      {itemsInCart.map((item) =>
+      (<ItemCounter key={item.productName} itemName={item.productName}
+        quantity={item.quantity} />
+      )
+      )
 
       {/* <ItemCounter itemName="nintento" quantity={0}/>
       <ItemCounter itemName="xbox" quantity={0}/>
